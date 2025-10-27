@@ -3,8 +3,12 @@ import { Route, Routes } from 'react-router';
 import MailboxList from "./components/MailboxList/MailboxList.jsx";
 import MailboxForm from "./components/MailboxForm/MailboxForm.jsx";
 import MailboxDetails from "./components/MailboxDetails/MailboxDetails.jsx";
+import { useState } from 'react';
 
 const App = () => {
+
+  const [mailboxes, setMailboxes] = useState([]);
+
   return (
     <>
       <NavBar />
