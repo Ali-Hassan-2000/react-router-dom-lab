@@ -18,6 +18,7 @@ const MailboxForm = (props) => {
     evt.preventDefault();
 
     props.addBox(formData);
+    console.log(formData)
     setFormData(initialState); // after navigate we can remove this line
 
     navigate('/mailboxes');
